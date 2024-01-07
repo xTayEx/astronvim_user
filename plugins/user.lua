@@ -9,4 +9,15 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "glepnir/template.nvim",
+    cmd = { "Template", "TemProject" },
+    config = function()
+      require("template").setup {
+        temp_dir = "~/.config/nvim/templates",
+        author = "xtayex",
+        email = "xtayexmimori@gmail.com",
+      }
+    end,
+  },
 }
